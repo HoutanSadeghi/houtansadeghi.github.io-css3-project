@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legends</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            background-image: url('images/logo.png');
+            background-size: 100px auto;
+            background-repeat: repeat;
+            font-size: 20px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(255,255,255,0.9);
+            z-index: -1;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            text-decoration: none;
+            z-index: 1000;
+            transition: top 0.3s ease;
+            background:white; 
+            color:black; 
+            padding: 8px;
+        }
+
+        .skip-link:focus {
+            top: 5px;
+            outline: 2px solid black;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: right;
+            }
+
+        header img {
+            float: right;
+            border: none;
+        }
+
+        h1 {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 25px;
+            outline: 5px solid blue;
+            outline-offset: 15px;
+            box-shadow: 0 0 0 15px red;
+            max-width: 450px;
+            background-color: white;
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+            width: 100%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
+            gap: 5px 30px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .player {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .player img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+            border: 5px solid blue;
+            background-color: white;
+        }
+        .player:nth-child(3n) img {
+            border: 3px solid red;
+        }
+
+        .player img:hover {
+            border-style:double;
+            border-radius:50px;
+        }
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Arsenal3.html">Home</a></li>
+                <li><a href="Legends.html">Legends</a></li>
+                <li><a href="ArsenalKit3.html">Arsenal Kit</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png" width="220" alt="Arsenal Logo.">
+    
+    </header>
+    <main id="main-content">
+        <h1>Arsenal Greatest Players</h1>
+        
+        <div class="grid-container">
+            <div class="player">
+                <img src="images/ThierryHenry.jpeg" alt="Arsenal legend Thierry Henry" width="100">
+                <p>Thierry Henry</p>
+            </div>
+            <div class="player">
+                <img src="images/DennisBergkamp.jpeg" alt="Arsenal legend Dennis Berkamp" width="100">
+                <p>Dennis Bergkamp</p>
+            </div>
+            <div class="player">
+                <img src="images/LeahWilliamson.jpeg" alt="Arsenal player Leah Williamson" width="100">
+                <p>Leah Williamson</p>
+            </div>
+            <div class="player">
+                <img src="images/TonyAdams.jpeg" alt="Arsenal legend Tony Adams" width="100">
+                <p>Tony Adams</p>
+            </div>
+            <div class="player">
+                <img src="images/IanWright.jpeg" alt="Arsenal legend Ian Wright" width="100">
+                <p>Ian Wright</p>
+            </div>
+            <div class="player">
+                <img src="images/KimLittle.jpeg" alt="Arsenal player Kim Little" width="100">
+                <p>Kim Little</p>
+            </div>
+            <div class="player">
+                <img src="images/DavidSeaman.jpeg" alt="Arsenal legend David Seaman" width="100">
+                <p>David Seaman</p>
+            </div>
+            <div class="player">
+                <img src="images/PatrickViera.jpeg" alt="Arsenal legend Patrick Vieira" width="100">
+                <p>Patrick Vieira</p>
+            </div>
+            <div class="player">
+                <img src="images/KatieMccabe.jpeg" alt="Arsenal legend Katie McCabe" width="100">
+                <p>Katie McCabe</p>
+            </div>
+            <div class="player">
+                <img src="images/RobertPires.jpeg" alt="Arsenal legend Robert Pires" width="100">
+                <p>Robert Pires</p>
+            </div>
+            <div class="player">
+                <img src="images/LiamBrady.jpeg" alt="Arsenal legend Liam Brady" width="100">
+                <p>Liam Brady</p>
+            </div>
+            <div class="player">
+                <img src="images/BethMead.jpeg" alt="Arsenal player Beth Mead" width="100">
+                <p>Beth Mead</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

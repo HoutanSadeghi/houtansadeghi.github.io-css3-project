@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal Football Club</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        
+        body {
+            background-image: url('images/logo.png');
+            background-size: 100px auto;
+            background-repeat: repeat;
+            font-size: 20px;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(255,255,255,0.9);
+            z-index: -1;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            text-decoration: none;
+            z-index: 1000;
+            background:white;
+            color:blue; 
+            font-weight:bold;
+            transition: top 0.3s ease;
+            padding: 8px;
+        }
+
+        .skip-link:focus {
+            top: 5px;
+            outline: 2px solid #000;
+        }
+
+        h1 {
+            border: 1px solid black;
+            padding: 5px;
+            margin: 25px;
+            outline: 5px solid blue;
+            outline-offset: 15px;
+            box-shadow: 0 0 0 15px red;
+            max-width: 450px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .container1 {
+            display: flex;
+            gap: 60px;
+            justify-content: space-around;
+            padding: 0 30px;
+            
+        }
+
+        section {
+            flex: 1;
+        }
+
+        .container1 img {
+            width: 220px;
+            height: 150px;
+            border: 5px solid red;
+            margin: 1px;
+            transition:transform;
+            transition-duration: 3s;
+            transition-delay:1s;
+            transition-timing-function: ease;
+           
+            transform-origin: left bottom; 
+        }
+
+        .container1 img:hover {
+            transform: scale(3); 
+            z-index: 10;
+            position: relative;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            justify-content: right;
+            }
+
+        header img {
+            float: right;
+            border: none;
+}
+
+        footer {
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Arsenal3.html">Home</a></li>
+                <li><a href="Legends.html">Legends</a></li>
+                <li><a href="ArsenalKit3.html">Arsenal Kit</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.png" width="220" alt="Arsenal Football Club Logo.">
+    
+    </header>
+  <main id="main-content">
+        <h1>Arsenal Football Club</h1>
+        
+        <section>
+            <h2>About</h2>
+            <p>A famous North London club with teams in the top divisions of both men's <a href="https://en.wikipedia.org/wiki/Arsenal_F.C.">Arsenal F.C.</a> and women's <a href="https://en.wikipedia.org/wiki/Arsenal_W.F.C.">Arsenal W.F.C.</a> football.</p>
+            
+        </section>
+
+        <section>
+            <h2>Facts</h2>
+            <p>Both Men and Women teams have won many domestic and European trophies in the past. In the 2024/25 season both men's and women's teams came second in their respective leagues.</p>
+            <div class="container1">
+            <section>
+                <h3>English Premier League - Men 24/25 Top 5</h3>
+                <ol>
+                    <li>Liverpool</li>
+                    <li>Arsenal</li>
+                    <li>Manchester City</li>
+                    <li>Chelsea</li>
+                    <li>Newcastle United</li>
+                </ol>
+                <img src="images/ArsenalMensSquad2025_26.avif" alt="Arsenal Men squad for 2025/26 season" width="90">
+            </section>
+            <section>
+                <h3>English Premier League - Women 24/25 Top 5</h3>
+                <ol>
+                    <li>Chelsea</li>
+                    <li>Arsenal</li>
+                    <li>Manchester United</li>
+                    <li>Manchester City</li>
+                    <li>Brighton & Hove Albion</li>
+                </ol>
+                <img src="images/ArsenalWomenSquad2025_26.jpg" alt="Arsenal Women squad for 2025/26 season" width="90">
+            </section>
+            </div>
+            <br>
+        </section>
+    </main>
+        <footer>
+            <p><em>Hover to enlarge photos</em></p>
+            <p><em>This code is written by Houtan Sadeghi to practice CSS3 for Uni. Michigan Coursera project 29 September 2025</em></p>
+            
+        </footer>
+</body>
+</html>
